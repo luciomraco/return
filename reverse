@@ -1,0 +1,15 @@
+using System;
+
+public class StringReverser {
+    public static string ReverseString(string text) {
+        char[] charArray = text.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+
+    public static void Main(string[] args) {
+        string word = "hello";
+        string reversedWord = ReverseString(word);
+        Console.WriteLine("Reversed word: " + reversedWord);
+    }
+}
